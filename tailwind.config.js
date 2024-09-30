@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'great-vibes': ['"Great Vibes"', 'cursive'],  // Add the new font here
+      },
+    },
   },
   plugins: [],
 }

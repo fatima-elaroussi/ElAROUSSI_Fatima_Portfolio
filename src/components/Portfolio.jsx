@@ -3,8 +3,6 @@ import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
-import project5 from "../assets/project5.png";
-import project6 from "../assets/project6.png";
 import arrow from "../assets/arrow.png";
 import { AiFillGithub } from 'react-icons/ai'
 import ShinyEffect from './ShinyEffect';
@@ -14,7 +12,7 @@ const projects = [
         img: project1,
         title: "Project #1",
         description:
-          "UI for frontend development using React.",
+          "MY Portfolio using React.",
         links: {
           site: "#",
           github: "#",
@@ -23,18 +21,18 @@ const projects = [
       {
         img: project2,
         title: "Project #2",
-        description: "A fullstack application built with Node.js and MongoDB.",
+        description: "A fullstack website built with The MERN Stack.",
         links: {
           site: "#",
-          github: "#",
+          github: "https://github.com/hamzaelalamy/f-blastek/tree/dev",
         },
       },
       {
         img: project3,
         title: "Project #3",
-        description: "A responsive website designed with modern CSS.",
+        description: "A responsive website with TypeScript and TailWind ",
         links: {
-          site: "#",
+          site: "https://one-pro-com-git-main-fatima-elaroussis-projects.vercel.app/?",
           github: "#",
         },
       },
@@ -42,31 +40,15 @@ const projects = [
         img: project4,
         title: "Project #4",
         description:
-          "An e-commerce platform with various features.",
+          "A Landing Page with Css.",
         links: {
-          site: "#",
+          site: "https://sparkly-kitsune-da7d7e.netlify.app/",
           github: "#",
         },
       },
-      {
-        img: project5,
-        title: "Project #5",
-        description: "A mobile-friendly application using React Native.",
-        links: {
-          site: "#",
-          github: "#",
-        },
-      },
-      {
-        img: project6,
-        title: "Project #6",
-        description:
-          "A data visualization project using D3.js and other libraries.",
-        links: {
-          site: "#",
-          github: "#",
-        },
-      }
+      
+    
+      
 ]
 
 const Portfolio = () => {

@@ -18,8 +18,7 @@ const About = () => {
 <div className='p-6'>
             <h2 className='text-gray-200 text-3xl font-bold mb-4'>Skills</h2>
             <p className='text-gray-300 mb-4'>
-                As a passionate web front-end developer with over 5 years of
-                experience, I have a proven track record of creating visually
+                As a passionate Front-End  developer , I have a proven track record of creating visually
                 stunning and responsive websites.
             </p>
             <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
