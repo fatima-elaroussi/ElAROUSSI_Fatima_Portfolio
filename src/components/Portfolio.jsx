@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React, {useState,useEffect} from 'react'
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
@@ -55,11 +57,19 @@ const projects = [
 const Portfolio = () => {
     const [currentProject, setCurrentProject] = useState(0)
     
+    useEffect(() => {
+      AOS.init({
+      duration: 800,
+      });
+    }, []);
+
   return (
-    <div className='my-6 max-w-[1200px] mx-auto grid grid-cols-8 gap-6 md:py-40' id="portfolio">
+<div className='my-6 max-w-[1200px] mx-auto grid grid-cols-8 gap-6 md:py-40' id='portfolio'>
 
 
-<div className='z-10 col-span-3 grid place-items-center grid-cols-1 relative'>
+  <div className='z-10 col-span-3 grid place-items-center grid-cols-1 relative' data-aos="fade-down"
+   data-aos-duration="1500"
+   data-aos-easing="ease-in-sine"   >
   <p className='text-gray-200 font-bold text-4xl -skew-y-6 '>Select Project</p>
   <img src={arrow} className='absolute w-[50px] top-10 right-12' />
 
@@ -78,14 +88,17 @@ const Portfolio = () => {
       </li>
     ))}
   </ul>
-</div>
+  </div>
 
         
 
 
 
 
-        <div className='z-10 glass  w-full border-2 col-span-5'>
+        <div className='z-10 glass  w-full border-2 col-span-5' data-aos="fade-left"
+   
+   data-aos-duration="1800"
+   data-aos-easing="ease-in-sine">
             <div className='w-full h-80'>
                 <img src={projects[currentProject].img} alt={projects[currentProject].title} 
                 className='w-full h-full object-cover rounded-lg mb-4'/>

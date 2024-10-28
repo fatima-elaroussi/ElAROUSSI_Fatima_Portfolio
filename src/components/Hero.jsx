@@ -11,11 +11,11 @@ import {
   DiBootstrap,
   DiMongodb,
 } from "react-icons/di";
-import { SiExpress, SiTypescript, SiTailwindcss } from "react-icons/si";
-import { BiLogoTypescript } from "react-icons/bi";
+import { SiExpress, SiTailwindcss } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
-import { motion } from "framer-motion";
-import ShinyEffect from "./ShinyEffect"
+import ShinyEffect from "./ShinyEffect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
   const dancingAnimation = {
@@ -24,7 +24,11 @@ const Hero = () => {
     scale: [1, 1.05, 1], // Slightly smaller scaling
   };
   
+  useEffect(() => {
+    AOS.init();
 
+  }, []);
+  
 
   return (
     <div

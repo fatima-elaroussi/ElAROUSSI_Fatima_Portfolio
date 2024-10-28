@@ -1,8 +1,14 @@
 import React,{useEffect} from 'react'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+
+    useEffect(() => {
+        AOS.init();
+    
+      }, []);
 
   return (
     <div className='px-6 max-w-[1000px] mx-auto  grid md:grid-cols-2 place-items-center' id="contact" >
@@ -49,7 +55,7 @@ const Contact = () => {
 
 
 
-            <form action="https://getform.io/f/placeYourEndpointHere" method="POST" 
+            <form action="https://getform.io/f/adrryewa" method="POST" 
             className=' max-w-6xl p-5 md:p-12' id="form">
                 <p className='text-gray-100 font-bold text-xl mb-2'>Let´s <span>connect!</span></p>
                 <input
@@ -58,6 +64,9 @@ const Contact = () => {
                     placeholder='Your Name ...'
                     name="name"
                     className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4'
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine"
                 />
                 <input
                     type="email"
@@ -65,6 +74,9 @@ const Contact = () => {
                     placeholder='Your Email ...'
                     name="email"
                     className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4'
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine"
                 />
                 <textarea
                     name="textarea"
@@ -73,8 +85,15 @@ const Contact = () => {
                     rows="4"
                     placeholder='Your Message ...'
                     className='mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4'
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine"
                 />
-                <button type="submit" className='w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color'>Send Message</button>
+                <button type="submit" className='w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color'
+                 data-aos="fade-up"
+                 data-aos-duration="1800"
+                 data-aos-easing="ease-in-sine"
+                 >Send Message</button>
             </form>
 
         
