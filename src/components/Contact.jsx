@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
+
 const Contact = () => {
+
   return (
-    <div className='px-6 max-w-[1000px] mx-auto  grid md:grid-cols-2 place-items-center' id="contact">
+    <div className='px-6 max-w-[1000px] mx-auto  grid md:grid-cols-2 place-items-center' id="contact" >
 
 
 

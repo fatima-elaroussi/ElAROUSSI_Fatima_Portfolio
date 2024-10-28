@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
@@ -51,9 +51,10 @@ const projects = [
       
 ]
 
+
 const Portfolio = () => {
     const [currentProject, setCurrentProject] = useState(0)
-
+    
   return (
     <div className='my-6 max-w-[1200px] mx-auto grid grid-cols-8 gap-6 md:py-40' id="portfolio">
 

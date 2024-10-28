@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className='max-w-[1000px] mx-auto p-6 grid grid-cols-2 gap-8 place-items-center md:py-52' id="about">
 
-<div className='p-6'>
+<div className='p-6' >
             <h2 className='text-gray-200 text-3xl font-bold mb-4'>Skills</h2>
             <p className='text-gray-300 mb-4'>
                 As a passionate Front-End  developer , I have a proven track record of creating visually
