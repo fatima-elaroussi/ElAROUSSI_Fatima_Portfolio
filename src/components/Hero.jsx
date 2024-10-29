@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import profilepic from "../assets/photo_portfolio_No background.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
@@ -14,30 +14,25 @@ import {
 import { SiExpress, SiTailwindcss } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import ShinyEffect from "./ShinyEffect";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
-  const dancingAnimation = {
-    rotate: [0, 8, -8, 8, -8, 0], // Less rotation for smoother motion
-    y: [0, -5, 0], // Smaller vertical movement for smoother bounce
-    scale: [1, 1.05, 1], // Slightly smaller scaling
-  };
-  
   useEffect(() => {
     AOS.init();
-
   }, []);
-  
 
   return (
     <div
-      className="max-w-[1200px] mx-auto grid md:grid-cols-8 gap-6 p-10 md:p-0 md:py-40"
+      className="max-w-[1200px] mx-auto grid md:grid-cols-8 gap-6 p-10 md:p-0 md:py-32"
       id="home"
     >
-      <div className="grid grid-cols-2 md:col-span-5 glass p-8 " data-aos="fade-right"
-     data-aos-duration="1500"
-     data-aos-easing="ease-in-sine">
+      <div
+        className="grid grid-cols-2 md:col-span-5 glass p-8 "
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="my-auto">
           <img
             className="w-[800px] mx-auto h-auto rounded-l-full rounded-r-full"
@@ -63,221 +58,60 @@ const Hero = () => {
               repeat={Infinity}
             />
           </p>
-          <div >
-          <button
-          role="button"
-          className="mt-16  px-5 py-2 text-lg w-full font-bold text-white bg-primary-color rounded-xl"
-        >
-          <a
-            href="/CV_Fatima_EL_AROUSSI.pdf"
-            download="CV_Fatima_EL_AROUSSI.pdf"
-            title="Download CV"
-            className="text-white"
-          >
-            Download CV
-          </a>
-        </button>
+          <div>
+            <button
+              role="button"
+              className="mt-16  px-5 py-2 text-lg w-full font-bold text-white bg-primary-color rounded-xl"
+            >
+              <a
+                href="/CV_Fatima_EL_AROUSSI.pdf"
+                download="CV_Fatima_EL_AROUSSI.pdf"
+                title="Download CV"
+                className="text-white"
+              >
+                Download CV
+              </a>
+            </button>
           </div>
-          
         </div>
-
-       
       </div>
 
-      <div className="grid grid-cols-1 md:col-span-3 gap-6"  data-aos="fade-left"
-   
-     data-aos-duration="1500"
-     data-aos-easing="ease-in-sine">
+      <div
+        className="grid grid-cols-1 md:col-span-3 gap-6"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="text-5xl p-12 glass">
           <p className="text-gray-200 text-xl font-bold mb-4 text-center">
             My Tech Stack
           </p>
           <div className="grid grid-cols-4 gap-4">
-            {/* <motion.a
-              animate={dancingAnimation}
-              // transition={{
-              //   duration: 1.5,
-              //   ease: "easeInOut",
-              //   repeat: Infinity,
-              //   repeatType: "mirror",
-              // }}
-              transition={{
-                duration: 3, // Slower duration for a smoother effect
-                ease: "easeInOut", // Smooth easing function
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiHtml5 className="text-orange-600 shadow-orange" />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiCss3 className="text-blue-600 shadow-blue " />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiBootstrap className="text-purple-600 shadow-purple" />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <SiTailwindcss className="text-blue-600 shadow-blue" />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiJavascript1 className="text-yellow-500 shadow-yellow" />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiReact className="text-blue-500 shadow-blue" />
-              
-            {/* </motion.a> */}
 
-
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
-            <DiNodejsSmall className="text-green-500 shadow-green" />
-              
-            {/* </motion.a> */}
-
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <DiMongodb className="text-green-500 shadow-green" />
-              
-            {/* </motion.a> */}
 
-            {/* <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
             <SiExpress className="text-green-500 shadow-green" />
-              
-            {/* </motion.a>
 
-            <motion.a
-              animate={dancingAnimation}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-              className="hover:scale-100 transition-transform duration-300"
-            > */}
-            {/* <SiTypescript className="text-blue-600 shadow-blue" /> */}
-            <TbBrandTypescript className="text-blue-600 shadow-blue"/>
-            {/* <BiLogoTypescript className="text-blue-600 shadow-blue" />       */}
-            {/* </motion.a> */}
+            <TbBrandTypescript className="text-blue-600 shadow-blue" />
           </div>
         </div>
 
         <div className="text-5xl gap-16 flex justify-center items-center glass text-gray-600">
-          {/* <motion.a
-            href="https://github.com/fatima-elaroussi"
-            animate={dancingAnimation}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "mirror",
-            }}
-            className="hover:scale-100 transition-transform duration-300"
-          > */}
-            <AiFillGithub />
-          {/* </motion.a>
-          <motion.a
-            href="https://www.linkedin.com/in/fatima-elaroussi"
-            animate={dancingAnimation}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "mirror",
-            }}
-            className="hover:scale-100 transition-transform duration-300"
-          > */}
-            <AiFillLinkedin />
-          {/* </motion.a> */}
-        </div>
+          <AiFillGithub />
 
-        {/* <div className="absolute inset-0 overflow-hidden md:overflow-visible">
-          <div className="hidden md:block">
-            <ShinyEffect left={550} top={100} size={700} />
-          </div>
-        </div> */}
+          <AiFillLinkedin />
+        </div>
       </div>
     </div>
   );

@@ -20,9 +20,8 @@ const Contact = () => {
                     <div className="text-gray-300 my-3">
                         <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
                         <p className="text-justify leading-7 w-11/12 mx-auto">
-                        I am a passionate Ful Stack developer dedicated to crafting innovative and user-friendly
- web applications. I am seeking new chalenging opportunities to showcase my skils and
- contribute to the success of ambitious projects.
+                        I am a passionate Full Stack developer dedicated to crafting innovative and user-friendly
+ web applications.  I am eager to take on new challenges where I can apply my skills and contribute to the success of dynamic and ambitious projects.
                         </p>     
                     </div>
                 </div> 
@@ -31,21 +30,21 @@ const Contact = () => {
                 <div className="flex mt-10 items-center gap-3">
                     <div className="bg-[#333333]/40 p-5 rounded-lg">
                         <h3 className="md:text-xl text-xl font-semibold text-white">Teamwork
-                            <span>+</span>
+                            <span></span>
                         </h3>
-                        <p><span className="md:text-base text-xs">Projects</span></p>
+                        <p><span className="md:text-base text-xs">Collaboration</span></p>
                     </div>
                     <div className="bg-[#333333]/40 p-5 rounded-lg">
                         <h3 className="md:text-xl text-xl font-semibold text-white">Autonomy
-                            <span>+</span>
+                            <span></span>
                         </h3>
-                        <p><span className="md:text-base text-xs">experience</span></p>
+                        <p><span className="md:text-base text-xs">Growth</span></p>
                     </div>
                     <div className="bg-[#333333]/40 p-5 rounded-lg">
                         <h3 className="md:text-xl text-xl font-semibold text-white">Adaptability
-                            <span>+</span>
+                            <span></span>
                         </h3>
-                        <p><span className="md:text-base text-xs">happy clients</span></p>
+                        <p><span className="md:text-base text-xs">Results</span></p>
                     </div>
                 </div>
 
