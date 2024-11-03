@@ -19,7 +19,7 @@ const Experience = () => {
             <p>Second Company</p>
             <p className='text-gray-400'>(2020 - Present)</p>
             <p className='text-gray-500'>
-                Description of your experience in this company.
+                Description of experience 
             </p>
         </div>
 
@@ -29,7 +29,7 @@ const Experience = () => {
             <p>Third Company</p>
             <p className='text-gray-400'>(2020 - Present)</p>
             <p className='text-gray-500'>
-                Description of your experience in this company.
+            Description of experience .
             </p>
         </div>
 
@@ -39,7 +39,7 @@ const Experience = () => {
             <p>Fourth Company</p>
             <p className='text-gray-400'>(2020 - Present)</p>
             <p className='text-gray-500'>
-                Description of your experience in this company.
+            Description of experience 
             </p>
         </div>
         

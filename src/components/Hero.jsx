@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className="my-auto ml-8 flex-col">
-          <p className="text-2xl md:text-4xl font-bold text-gray-200">
+          <p className="text-xl md:text-4xl font-bold text-gray-200">
             Hi! I am <br /> EL AROUSSI Fatima <br />
             <TypeAnimation
               sequence={[
@@ -61,7 +61,7 @@ const Hero = () => {
           <div>
             <button
               role="button"
-              className="mt-16  px-5 py-2 text-lg w-full font-bold text-white bg-primary-color rounded-xl"
+              className="mt-16  px-5 py-2 text-xs md:text-lg w-full font-bold text-white bg-primary-color rounded-xl"
             >
               <a
                 href="/CV_Fatima_EL_AROUSSI.pdf"
@@ -108,9 +108,20 @@ const Hero = () => {
         </div>
 
         <div className="text-5xl gap-16 flex justify-center items-center glass text-gray-600">
-          <AiFillGithub />
+        <a
+            href="https://github.com/fatima-elaroussi"
+            className="hover:scale-100 transition-transform duration-300"
+          >
+            <AiFillGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fatima-elaroussi"
+            className="hover:scale-100 transition-transform duration-300"
+          >
+            <AiFillLinkedin />
+          </a>
 
-          <AiFillLinkedin />
+          
         </div>
       </div>
     </div>

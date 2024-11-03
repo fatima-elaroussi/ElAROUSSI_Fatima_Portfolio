@@ -26,7 +26,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: visible;
+  overflow:visible;
   font-family: "Space Grotesk", sans-serif;
   /* background-color: hsl(256, 100%, 5%); */
   background: #151515;

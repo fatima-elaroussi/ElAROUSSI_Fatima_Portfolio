@@ -22,11 +22,11 @@ const About = () => {
 
   return (
     <div
-      className="max-w-[1000px] mx-auto p-6 grid grid-cols-2 gap-8 place-items-center md:py-52 "
+      className="max-w-[1000px] mx-auto p-6 md:grid md:grid-cols-2 md:gap-8 md:place-items-center md:py-52 "
       id="about"
     >
       <div className="p-6">
-        <h2 className="text-gray-200 text-4xl font-bold mb-4">
+        <h2 className="text-gray-200 text-2xl md:text-4xl font-bold mb-4">
           {" "}
           <span>My</span> Skills
         </h2>
@@ -38,7 +38,7 @@ const About = () => {
           seamless user experiences. With a strong commitment to learning and
           growth
         </p>
-        <div className="md:flex flex-wrap gap-4 text-4xl justify-center hidden">
+        <div className="flex flex-wrap gap-4 text-4xl justify-center ">
           <DiHtml5
             className="text-orange-600"
             data-aos="fade-up"
@@ -116,7 +116,7 @@ const About = () => {
              from-purple-100 to-orange-900 rounded-lg
             blur opacity-25 group-hover:opacity-100 transition duration-300"
         ></div>
-        <div className="relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg">
+        <div className="relative w-full p-4 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg hidden md:block  ">
           <img
             src={project3}
             alt="project 3"
@@ -125,7 +125,7 @@ const About = () => {
         </div>
       </div>
       <div className="p-6">
-        <h2 className="text-gray-200 text-3xl font-bold mb-4">
+        <h2 className="text-gray-200 text-2xl md:text-4xl font-bold mb-4">
           Frontend <span>Experience</span>
         </h2>
         <p className="text-gray-300 mb-4">
@@ -137,7 +137,7 @@ const About = () => {
       </div>
 
       <div className="p-6">
-        <h2 className="text-gray-200 text-3xl font-bold mb-4">
+        <h2 className="text-gray-200 text-2xl md:text-4xl font-bold mb-4">
           BackEnd <span>Experience</span>
         </h2>
         <p className="text-gray-300 mb-4">

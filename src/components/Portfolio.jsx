@@ -1,8 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, {useState,useEffect} from 'react'
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
+import project1 from "../assets/portfpoliocapture.png";
+import project2 from "../assets/CaptureF'blastek.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import arrow from "../assets/arrow.png";
@@ -64,17 +64,17 @@ const Portfolio = () => {
     }, []);
 
   return (
-<div className='my-6 max-w-[1200px] mx-auto grid grid-cols-8 gap-6 md:py-40' id='portfolio'>
+<div className='my-6 max-w-[1200px] mx-auto grid grid-cols-8  md:py-40' id='portfolio'>
 
 
   <div className='z-10 col-span-3 grid place-items-center grid-cols-1 relative' data-aos="fade-down"
    data-aos-duration="1500"
    data-aos-easing="ease-in-sine"   >
-  <p className='text-gray-200 font-bold text-4xl -skew-y-6 '>Select Project</p>
-  <img src={arrow} className='absolute w-[50px] top-10 right-12' />
+  <p className='text-gray-200 font-bold text-2xl md:text-4xl -skew-y-6 '>Select Project</p>
+  <img src={arrow} className='md:absolute w-[45px] md:w-[50px] top-10 right-12' />
 
   <ul className='ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center md:gap-1
-   space-y-2 md:space-y-4 text-2xl'>
+   space-y-2 md:space-y-4 text-base md:text-2xl'>
     {projects.map((project, index) => (
       <li
         key={index}
