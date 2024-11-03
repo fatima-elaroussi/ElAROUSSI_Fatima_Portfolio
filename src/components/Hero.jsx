@@ -56,12 +56,13 @@ const Hero = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-            />
+            className="hidden md:block "/>
           </p>
+          <span className="text-2xl font-bold">Full stack Dev</span>
           <div>
             <button
               role="button"
-              className="mt-16  px-5 py-2 text-xs md:text-lg w-full font-bold text-white bg-primary-color rounded-xl"
+              className=" mt-5 md:mt-16  px-5 py-2 text-xs md:text-lg w-full font-bold text-white bg-primary-color rounded-xl"
             >
               <a
                 href="/CV_Fatima_EL_AROUSSI.pdf"
